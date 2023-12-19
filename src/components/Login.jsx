@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import back from "../assets/back.png";
+import Photobackground from "../assets/icon/Photolog/Photobackground.svg";
 
 const Login = () => {
   return (
-    <div>
-      <ImgStyle>
-        <img src={back} alt="" />
-      </ImgStyle>
-    </div>
+    <ImgStyle>
+      <img src={Photobackground} alt="" />
+    </ImgStyle>
   );
 };
 export default Login;
 
-const ImgStyle = styled`
-     width: 100;
+const ImgStyle = styled.div`
+  width: 720px;
+  height: 1024px;
+  
 `;
