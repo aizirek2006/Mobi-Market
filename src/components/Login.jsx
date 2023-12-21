@@ -14,8 +14,16 @@ const Login = () => {
       <Icon src={Photobackground} alt="" />
 
       <FormGroup>
-        <Input type="text" placeholder="Name" name="name" id="name" required />
-        <InputLabel htmlFor="name">Имя пользователя</InputLabel>
+        <InputContainer>
+          <Input
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+          <InputLabel htmlFor="name">Имя пользователя</InputLabel>
+        </InputContainer>
 
         <PasswordInputContainer>
           <Input
@@ -39,6 +47,7 @@ const Container = styled.div`
   font-size: 1.5rem;
   background-color: white;
   display: flex;
+  align-items: center; /* Center vertically */
 `;
 
 const Icon = styled.img`
@@ -50,6 +59,12 @@ const FormGroup = styled.div`
   padding: 15px 0 0;
   margin-top: 10px;
   width: 50%;
+`;
+
+const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 `;
 
 const PasswordInputContainer = styled.div`
