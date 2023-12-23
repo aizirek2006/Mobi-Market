@@ -60,7 +60,6 @@ const Profile = () => {
     <ProfileWrapper>
       <Avatar
         src={avatarSrc}
-        alt="Аватар"
         onClick={handleAvatarClick}
         onDoubleClick={handleAvatarDoubleClick}
       />
