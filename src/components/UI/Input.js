@@ -3,8 +3,8 @@ import React from "react";
 const Input = () => {
   return (
     <div>
-      <input></input>
-      <input></input>
+      <input>м</input>
+      <input>м</input>
     </div>
   );
 };
