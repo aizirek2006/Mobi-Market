@@ -38,6 +38,7 @@ const Login = () => {
           </VisibilityButton>
         </PasswordInputContainer>
       </FormGroup>
+      <H3>Забыли пароль?</H3>
     </Container>
   );
 };
@@ -47,7 +48,7 @@ const Container = styled.div`
   font-size: 1.5rem;
   background-color: white;
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center; 
 `;
 
 const Icon = styled.img`
@@ -143,3 +144,7 @@ const VisibilityButton = styled.button`
 `;
 
 export default Login;
+
+const H3 = styled.h3`
+  color: blue;
+`;
